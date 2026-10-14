@@ -40,7 +40,6 @@ class TestRelevanceScorer:
         assert isinstance(score, float)
         assert score < 0.5  # Should be low score
 
-
     def test_query_with_partial_overlap(self, scorer):
         """Test query with partial overlap returns score between 0 and 1."""
         query = "Python Django web framework"
